@@ -2,13 +2,13 @@
 """
 This module measures the time async function calls
 """
-from time import time
 import asyncio
-from datetime import datetime
+from time import time
+from typing import List
 wait_n = __import__("1-concurrent_coroutines").wait_n
 
 
-def measure_time(n, max_delay):
+def measure_time(n: int, max_delay: int) -> float:
     start = time()
     asyncio.run(wait_n(n, max_delay))
     end = time()
