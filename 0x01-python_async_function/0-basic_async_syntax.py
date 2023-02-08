@@ -5,7 +5,7 @@ import asyncio
 from random import random
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
     """
     Returns a random number after waiting for some time
     """
