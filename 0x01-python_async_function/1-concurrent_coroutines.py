@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/bin/usr/env python3
 """
 This module spawns multiple coroutines at the same time
 """
